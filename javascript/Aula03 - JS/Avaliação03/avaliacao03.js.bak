@@ -1,0 +1,27 @@
+let Quantidade = 0;
+insercao.style.visibility = "hidden"
+qnty.onkeypress = function (){
+    Quantidade = qnty.value;
+    insercao.style.visibility = "visible"
+}
+
+inserir.onclick = function(){
+    for (let i = 0; i < Quantidade; i++) {
+        inputNames2 += nomes.value + ","; 
+    }
+}
+
+exibir.onclick = function () {
+    let inputNames = nomes.value;
+    console.log(inputNames);
+    let namesArray = ((inputNames.toUpperCase()).split(',')).sort();
+    console.log(namesArray);
+    console.log("Tamanho do vetor namesArray[] = "+namesArray.length)
+
+    for (let i = 0; i < namesArray.length; i++) {
+        n = document.createElement('p');
+        n.textContent = namesArray[i];
+        document.body.appendChild(n)
+    }
+    nomes.value = "";   
+}

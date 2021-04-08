@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html> <!-- Inclui diversos exemplos discutidos na primeira aula.-->
+    <head>
+        <meta charset="UTF-8" />
+        <title>Aula 01</title>
+        <link rel="stylesheet" href="exemplo01.css"/>
+    </head>
+    
+        
+    <body id="inicio">
+        <div id="container"> <!-- Tag de divisão geral. -->
+            <img src="imagens/imagem08.jpeg" alt="Corredor do CA" width="100%" height="auto"/>
+            <header id="box_header">
+                <h1><em>Minha página HTML5!</em></h1>
+            </header>
+
+
+            <nav>		<!-- Nav: Box do menu de navegação principal -->
+                <ul>	<!-- Lista de links para outros componentes -->
+                	<li><a href="#">Home</a></li>
+                	<li><a href="sobre.html">Sobre</a></li>
+                	<li><a href="galeria.html">Galeria</a></li>
+                	<li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+
+            <section id="box_section">
+
+                <article class="box_article" >
+                    <img id="imagem1" src="imagem6.jpg" title="Mountains" alt="" />
+                    <h2 class="tit2">Olá Mundo!</h2>
+                     <p>Essa é a minha <b>primeira página</b>,<br/> das muitas que virão!</p>
+                </article>
+
+                <article class="box_article" >
+                    <h2 class="tit2">Lorem Ipsum</h2>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. </p>
+                     <p>Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada 
+                        fames ac turpis egestas.</p>
+                     <p>Nulla at risus. 
+                        Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.</p>     
+
+                    <ol id="lista1"> <!-- Tag de lista --> 
+                        <li>Placeholder1</li>
+                        <li>Placeholder2</li>
+                        <li>Placeholder3</li>
+                    </ol>
+
+                    <table border="1">   
+                        <tr><th>Coluna 1</th><th>Coluna 2</th></tr>
+                        <tr><td>A</td><td>B</td></tr>
+                        <tr><td>C</td><td>D</td></tr>
+                    </table> 
+
+                    <table border="1">   
+                        <caption>Legenda da Tabela</caption>        
+                        <tr><td>AAAA</td><td>BBBBB</td></tr>
+                        <tr><td>C</td><td>DD</td></tr>
+                    </table> 
+        
+                    <table border="1"> 
+                        <tr><td colspan="2">AAA</td></tr>
+                        <tr><td>B</td><td>C</td></tr>
+                    </table> 
+
+                    <table border="1">           
+                        <tr><td rowspan="2">AAA</td><td>B</td></tr>
+                        <tr><td>C</td></tr>
+                    </table> 
+        
+                    
+                    <ol id="lista2"> <!-- Tag de lista mista --> 
+                        <li>Item a</li>
+                        <li>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                            </ul>  
+                        </li>
+                        <li>Item b</li>
+                    </ol>
+
+                    <dl id="glossario1"> <!-- Tag de glossário --> 
+                        <dt>WWW</dt>
+                        <dd>World Wide Web </dd>
+                        <dt>CSS</dt>
+                        <dd>Cascading Style Sheets</dd>
+                        </dl>
+
+                        <a href="../exemplo1/exemplo01.html" target="_blank">Exemplo01</a><br>
+                        <a href="https://google.com.br" target="_self">Google</a><br>
+                        <a href="../teste1/imgs/2c.jpg" target="_new">Charmeleon</a><br>
+                   </article>
+            
+            
+            </section>
+            <footer id="box_footer">
+                <address><p>&copy; ILP-540 – Fatec-SP</p></address>
+            </footer>
+        </div> 
+    </body>  <!-- Inclua outros artigos com subtítulos e textos na section. -->
+</html>

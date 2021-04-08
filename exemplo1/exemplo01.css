@@ -1,0 +1,75 @@
+body {
+    font-size:16px;
+    font-family: sans-serif;
+    background-color: hsla(229, 72%, 69%, 0.65);
+    
+}
+
+#container {
+    width: 80%;
+    background-color: skyblue;
+    margin: auto;
+    background-image: linear-gradient(to bottom right, red, yellow); 
+}
+
+h1  {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #ff3300 ;
+    text-shadow: 2px 2px 5px black;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+.tit2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    text-align: center;
+    color: hsl(87, 100, 17) ;
+    text-shadow: 1.20px 1.20px 3px black;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+#artigo1 {
+    text-align: center;
+    direction: ltr;
+    line-height: 115%;
+    word-spacing: 10%;
+}
+#artigo2 {
+    text-align: center;
+    direction: ltr;
+    line-height: 120%;
+    word-spacing: 0.5px;
+}
+#texto1 {
+    color: blue;
+}
+#texto2 {
+    color: hsl(240, 100, 50);
+}
+#texto3 {
+    color: #000;
+}
+#Krogan1 {
+    align-self: auto;
+    width: 100%;
+    height: auto;
+}
+#Dylan{
+    align-self: auto;
+    width: 100%;
+    height: auto;
+}
+#Halo{
+    align-self: auto;
+    width: 100%;
+    height: auto;
+}
+
+#glossario1, #lista1, #lista2 {
+    color: #000;
+    text-shadow:1.20px 1.20px 3px  rgb(96, 96, 96);
+}
+
+.caption{
+    text-align: center;
+}

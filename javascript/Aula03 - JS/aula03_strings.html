@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+ <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AULA 03 JS</title>
+     </head>
+  <body>
+     
+      
+   <h2>JAVASCRIPT - STRINGS - ARRAYS E IMAGES</h2> 
+      
+    <!-- Imagens sem o pathname do arquivo e sem o atributo src... -->  
+    <p><img id="img1" width="180" />  
+       <img width="180" />
+    </p>
+      
+    <h3 id="visor"></h3>  
+    <h3 id="visor1"></h3>  
+      
+    <script>
+
+    let nome1="Guilherme Shin Habe";
+    document.write("<p>" + nome1 + "</p>");
+    document.write(`<p> ${typeof(nome1)} </p>`); 
+        
+    document.write(`<p> ${nome1.toUpperCase( )} </p>`); 
+        
+    document.write(`<p> ${nome1[0]} </p>`);  
+        
+    nome1 = nome1.toUpperCase( )    
+    document.write(`<p> ${nome1} </p>`); 
+    document.write(`<p> ${nome1[1]} </p>`);   
+        
+    let nome2 = new String("Aline Olibert Tarallo"); 
+    document.write(`<p> ${nome2} </p>`);  
+        
+    document.write(`<p> ${typeof(nome2)} </p>`); 
+    document.write(nome2.length + "<br />");    
+        
+    // ********** MÉTODOS STRING ***
+        
+    let frase= "Brasil, meu Brasil Brasileiro";
+        
+    document.write(`<p> ${frase.substring(12,18)} </p>`);     
+    document.write(`<p> ${frase.substr(8,10)} </p>`);          
+    document.write(`<p> ${frase.slice(-17)} </p>`);             
+    
+    document.write(`<p> ${frase.indexOf("Brasil")} </p>`);       
+    document.write(`<p> ${frase.indexOf("Brasil",1)} </p>`);      
+    document.write(`<p> ${frase.lastIndexOf ("Brasil")} </p>`);    
+    document.write(`<p> ${frase.lastIndexOf ("país")} </p>`);        
+    var assunto = "Apostila de HTML";
+    document.write(`<p> ${assunto.replace ("HTML", "Javascript")} </p>`);
+        
+        
+    // ********** ARRAYS ***
+        
+   let letras = ["A","B","C","D","E"];     
+   document.write(`<p> ${typeof(letras)} </p>`);
+        
+        
+   let alunos = ["Nilo", "Flavio", "Bruno", "Rodrigo"];
+   document.write(`<p> ${alunos} </p>`); 
+        
+   document.write(`<p> ${alunos.length} </p>`);
+   alunos.sort( );     
+   document.write(`<p> ${alunos} </p>`);      
+     
+        
+   let nome3 = "Pedro Álvares Cabral";
+        
+   let nomeArray = nome3.split(" ");
+     
+   document.write(`<p> ${nomeArray.length} </p>`);     
+   document.write(`<p> ${nomeArray} </p>`);                 
+   document.write(`<p> ${nomeArray[1]} </p>`);             
+        
+   let nomeString = nomeArray.join(" ");
+        
+   document.write(`<p> ${nomeString.length} </p>`);  
+   document.write(`<p> ${nomeString} </p>`);   
+   
+     
+   // *********** MÉTODOS DO ARRAY ***
+        
+        
+   let frutas = ["Banana", "Laranja", "Uva", "Maçã"];
+   let frt1 = frutas.shift( );
+   document.write(frutas + "<br>");    
+   document.write(frt1 + "<br><br>");
+   // Remove o primeiro elemento do array e retorna-o.
+        
+   let frt2 = frutas.pop( );
+   document.write(frutas + "<br>");
+   document.write(frt2 + "<br><br>");
+   //Remove o último elemento de um array e e retorna-o.
+
+   let frt3 = frutas.unshift("Pera","Goiaba");
+   document.write(frutas + "<br>");
+   document.write(frt3 + "<br><br>");
+   // Adiciona elementos no começo e retorna seu comprimento.
+        
+   let frt4 = frutas.push("Kiwi");
+   document.write(frutas + "<br>");
+   document.write(frt4 + "<br><br>");
+   // Adiciona elementos no final e retorna o seu comprimento.
+
+   frutas = ["Banana", "Laranja", "Uva", "Maçã"];
+   document.write(frutas + "<br>");
+   let frt5 = frutas.reverse( );
+   document.write(frutas + "<br>");
+   document.write(frt5 + "<br><br>");
+   // Inverte a ordem dos elementos e salva na origem.
+        
+   let frt6 = frutas.slice(1, 3);  
+   // 1 é o índice inicial e 3 o final (exclusive). 
+   document.write(frutas + "<br>");
+   document.write(frt6 + "<br><br>");
+   // Seleciona elementos e retorna-os. Não altera a origem! 
+    
+        
+   frutas = ["Ameixa", "Pera", "Pitanga", "Cajá"];
+        
+   function exibe(value) {      
+     visor.innerHTML += value + " ";
+   }     
+   frutas.forEach(exibe); 
+     
+        
+   frutas = ["Ameixa", "Pera", "Pitanga", "Cajá"];
+   frutas.forEach(function(value) {     
+     visor1.innerHTML += value + " ";
+   });
+     
+        
+        
+   // *********** IMAGES ***    
+              
+        
+   // Inclui um pathname para segunda imagem do documento. 
+   document.images[1].src= "pelicano.jpg"; 
+       
+   // Inclui um pathname para a imagem identificada pelo 'id'.
+   img1.src= "pelicano.jpg";
+     
+     
+   </script>
+     
+ </body>
+</html>

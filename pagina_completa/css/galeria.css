@@ -1,0 +1,40 @@
+#box_section div#galeria_conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 2px solid lightcoral;
+    background-image: 
+        linear-gradient(to top,
+            rgb(179, 179, 179),
+            rgb(153, 153, 153)),
+        url("imagens/textura.jpg"); 
+    background-size: cover;
+}
+
+
+div#galeria_conteudo figure{
+    width: calc(99%/6);
+    min-width: 250px;
+    max-width: 400px;
+    padding: 15px;
+    margin: 20px;
+    border: solid 1px #dddddd;
+    border-radius: 2px;
+    box-shadow: 10px 10px 10px #555;
+    background-color: rgb(240,240,240);
+}
+
+figure .galeria_figura {                             
+    width: 100%;
+    max-width: 100%;
+    height: auto;           
+}
+
+figure .imgcap{
+    font-size: 13.5px;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 1px 0.5px grey;
+}

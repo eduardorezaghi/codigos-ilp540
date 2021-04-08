@@ -1,0 +1,86 @@
+<!Doctype html>
+      <html>      
+          <head>
+             <meta charset="UTF-8" />
+             <title>Minha Página</title>
+             <meta name="viewport"  content="width=device-width, initial-scale=1.0" />
+             <link rel="stylesheet"href="css/index.css" /> 
+             <link rel="stylesheet"href="css/contato.css" /> 
+             <link rel="stylesheet" href="css/breakpoints.css" />
+          </head>
+          <body>
+              <div id="container"> 
+                   <header id="box_header" class="back_head">   <!-- Classe incluída para o gradiente. -->
+                       <h1 id="tit1">
+                          <!-- Logo incluído dentro do h1 (pode ser também fora! -->
+                          <img id="logo" src="imagens/logo2.png" width="100" alt="Logo" title="Nosso Logo" /> 
+                          Minha primeira página!
+                       </h1>     
+                   </header>
+                   <nav id="box_menu">
+                       <ul id="list_menu">
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="sobre.html">Sobre</a></li>
+                           <li><a href="galeria.html">Galeria</a></li>
+                           <li><a href="#">Contato</a></li>
+                       </ul>
+                   </nav>
+
+                   <section id="box_section">
+
+                        <div id="box_container" >
+                            <form id="contato" name="contato" method="post" action="mailto:edu.rezaghi@gmail.com">
+                                <fieldset><legend>Enquete</legend>
+                                    <p>
+                                        <label for="user">Nome: </label>
+                                        <input type="text" name="user" id="user"
+                                        size="45" maxlength="35" ></p>
+                                    <p>
+                                        <label for="e-mail">E-mail:</label>
+                                        <input type="email" name="e-mail" id="e-mail"
+                                        size="45">
+                                    </p>
+                                    <p>
+                                        <label>Gosta da aula de ILP-540?</label>
+                                        <label for="sim">Sim:</label>
+                                        <input type="radio" id="sim" name="enq" value="s" />
+                                        <label for="nao">Não:</label>
+                                        <input type="radio" id="nao" name="enq" value="n" />
+                                    </p>                                    
+                                    <p>
+                                        <label for="comentario">Comentário: </label><br/>
+                                        <textarea name="comentario" id="comentario" 
+                                        cols="45" rows="4" maxlength="140" ></textarea>
+                                    </p>
+                                     <p>
+                                       <input type="submit" value="Enviar" id="enviar"/>
+                                       <input type="reset" value="Limpar" id="limpar"/>
+                                     </p>
+
+                                    
+
+
+                                </fieldset>
+                            
+                            </form>
+
+                        </div>    
+                    
+                   </section>
+
+                   <footer id="box_footer" class="back_footer">    <!-- Classe incluída para o gradiente. -->
+                      <table>
+                          <tr>
+                              <td><a href="#">Home</a></td>
+                              <td><a href="sobre.html">Sobre</a></td>
+                              <td><a href="galeria.html">Galeria</a></td>
+                              <td><a href="contato">Contato</a></td>
+                          </tr>
+                      </table>   
+                      <address>
+                          <p>&copy; ILP-540 – Fatec-SP</p>
+                      </address>
+                   </footer>
+               </div>
+          </body>
+      </html>

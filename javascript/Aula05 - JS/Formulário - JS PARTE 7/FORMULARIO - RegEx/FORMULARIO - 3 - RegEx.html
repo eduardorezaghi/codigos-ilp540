@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="FORMULARIO - 3 - RegEx.css">
+    <title>FORMULARIO - 3 - RegEx</title>
+</head>
+<body>
+  
+<form name="form3" id="form3">
+    <h3>FORMULÁRIO 3</h3>      
+    <p><span id="msgGeral3">Preencha todos os campos!</span>
+    </p><p>     
+    <label for="user3">
+        <input type="text" name="user3" id="user3" 
+          placeholder="Nome e sobrenome..." /> 
+        <span id="msgUser3" class="valido"></span>
+    </label>
+    </p><p>       
+    <label for="email3">
+        <input type="text" name="email3" id="email3”
+          placeholder="email@domain.com" /> 
+        <span id="msgEmail3" class="valido"></span>    
+    </label>
+    </p>
+
+    <p>
+        <label for="news3">News 3:
+          <input type="checkbox" name="news3" id="news3" value="on" />
+          <span id="msgNews3" class="valido"></span>     
+        </label>
+        </p><p>
+        <label for="nasc3">Nascimento:
+           <input type="text" name="nasc3" id="nasc3" 
+             placeholder="aaaa-mm-dd" size="12" />
+           <span id="msgNasc3" class="valido"></span>    
+        </label>
+        <p>     
+        <input id="btEnviar3" type="button" value="Enviar" />  
+        <em>(type="button")</em>
+        </p> 
+    </form> 
+
+    <script src="FORMULARIO - 3 - RegEx.js"></script>
+</body>
+</html>

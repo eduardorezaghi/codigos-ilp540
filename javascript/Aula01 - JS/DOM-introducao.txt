@@ -1,0 +1,14 @@
+DOM (Document Object Model) 
+---> modelo estrutural, em formato de árvore, para carregamento das páginas HTML.
+    --> Interface de programação utilizada por outras linguagens (Python, JavaScript)
+
+Nós são criados para representarem os ELEMENTOS da página.
+DOM, essencialmente, oferece uma interface para MANIPULAR esses ELEMENTOS.
+
+Método --> GetElementById
+--> Retorna referência do elemento (tag HTML) através do id
+    Sintaxe: let elemento = document.GetElementById("id");
+
+Glossário: document       - representa a estrutura HTML.
+               id         - representa o id definido na tag HTML.
+           GetElementById - método do objeto "document", que captura o id do elemento

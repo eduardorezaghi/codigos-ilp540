@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="FORMULARIO - 1 - HTML.css">
+    <title>FORMULARIO - 1 - HTML</title>
+</head>
+<body>
+    
+   <form name="form1" id="form1" action="mailto:email@domain.com"
+   method="post" enctype="text/plain">
+    <h3>FORMULÁRIO 1</h3>
+      <p>
+      <label for="user1">
+        <input type="text" name="user1" id="user1" minlength="3" 
+          placeholder="Seu nome..." required /> 
+      </label>
+      </p><p>    
+      <label for="email1">
+        <input type="email" name="email1" id="email1" minlength="4" 
+          placeholder="email@domain.com" required />    
+      </label>
+      </p><p>
+      <label for="news2">Aceite:
+        <input type="checkbox" name="news2" id="news1" value="on" required />    
+      </label>
+     </p>
+
+     <p> 
+        <label>Opção:
+          opc 01<input type="radio" name="opcao1" class="opc1" value="opc1" required />
+          opc 02<input type="radio" name="opcao1" class="opc1" value="opc2" />     
+        </label>
+        </p><p>
+        <label for="nasc1">Nascimento:
+        <input type="date" name="nasc1" id="nasc1" min="1901-01-01" max="2002-12-31"
+            required />    
+        </label>
+        </p>
+        <p>
+        <button><em><b>Enviar</b></em></button> <em>(type="submit")</em>
+        </p>
+        <p id="msgForm1"></p>    
+    </form>
+    <!-- Type "submit" é o ‘default’ para o botão <button>. 
+         O <button> é mais fácil de estilizar do que o <input type="submit">. --> 
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* Página Modelo: Capítulo 02 */
+
+/* Reset - Para padronizar alguns elementos do CSS dos navegadores... */
+
+                div, header, nav, section, article, aside, figure, footer, ul {   
+                    margin: 0;
+                    padding: 0;
+                    display:block;
+                    box-sizing: border-box;
+                }  
+
+/* Início da Estilização... */
+
+                html, body {
+                    font-size: 18px;
+                    font-family: sans-serif;
+                    background-image: url("imagens/foto2.jpg"); 
+                }
+                p {
+                    text-indent: 0%;                        /* Indentação zerada... */
+                }
+                h1 {                                        
+                    color: navy;         
+                    font-size: 2.2rem;                      /* Tamanho da fonte em 'em'... */
+                    font-family: 'Helvetica Neue', sans-serif;       /* Família de fontes... */
+                }
+                .tit2 {color: green;
+                    margin-left: 0%;                        /* Margem esquerda zerada... */
+                }
+                #container {
+                    margin: auto;
+                    width: 90%;
+                    border: 5px solid #aaa;
+                    background-color: #e6f2ff;
+                }
+                section {
+                    padding-left: 5%;                       
+                    padding-right: 5%;                      
+                }
+                .box_article {
+                   padding-left: 15px; 
+                   padding-bottom: 15px;     
+                }
+                #box_header, #box_footer {
+                    background-color: aqua;
+                    padding: 25px;                          /* Margem interna... */
+                    text-align: center;
+                }
+                .back_head{
+                    background-image: 
+                        linear-gradient(to top,
+                        rgba(100,240,240,0.92),
+                        rgba(100,100,240,0.93)),
+                        url("imagens/textura.jpg");
+                    background-size: contain;
+                }
+                .back_footer{
+                    background-image: 
+                        linear-gradient(to top,
+                        rgba(100,100,240,0.93),
+                        rgba(100,240,240,0.92)),
+                        url("imagens/textura.jpg");
+                    background-size: contain;
+                }
+                #img1 {
+                    max-width: 30%;
+                    height: auto;
+                    float: right;
+                    margin-left: 2%;  
+                    box-shadow: 3px 3px #999;               /* Efeitos de Bordas incluídos... */
+                    border-radius: 7px;
+                }
+                #img2 {                             
+                    max-width: 30%;
+                    height: auto;
+                    float: left;
+                    margin-right: 2%;
+                    box-shadow: 3px 3px #999;               /* Efeitos de Bordas incluídos... */
+                    border-radius: 7px;
+                }
+                #box_footer {
+                    clear: both;
+                }
+
+                #container nav{                             /* Menu de navegação */
+                    background-color: rgb(255,191,128);   /* Cor do Menu */
+                }
+
+                nav ul{
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                nav li{
+                    border: solid 2px gold;
+                    width: calc(60% / 4);
+                    min-width: 160px;
+                    text-align: center;
+                    background-color: darkorange;
+                    box-shadow: 2px 2px darkgrey;
+                }
+
+                nav a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: black;
+                    display: block;
+                    padding: 25px;
+                } 
+                nav a:hover{
+                    background-color: aliceblue;
+                }
+
+                footer table{           /* Tabela no Rodapé */
+                    margin: auto;
+                    margin-top: 20px;
+                }
+                
+                footer td{
+                    display: inline-block;
+                    background-color: rgba(255, 191, 128, .7);
+                    min-width: 160px;
+                    border: solid 1px darkorange;
+                    padding: 5px;
+                }
+
+                footer td a{
+                    text-decoration: none;
+                    color: #555;
+                    display: block;
+                    padding: 10px;
+                } footer a:hover{background-color: white;}
+
+                aside{
+                    clear:both;
+                    padding: 10px;
+                    background-color: lightyellow;
+                }    
+            
+                aside ul{
+                    list-style: square inside;
+                    font-style: italic;
+                    color:green;
+                    padding-left: 6%;                    
+                }
+                aside li{
+                    padding: 10px 0;
+                }   

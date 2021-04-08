@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+ <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AULA 04 - JS Objeto</title>
+     </head>
+  <body>
+     
+   <h2>JAVASCRIPT - OBJETO PERSONALIZADO</h2>
+      
+      <p id="p1"></p>
+      <p id="p2"></p>
+      
+    <script>
+
+ /*        
+      let var1 = "Variável 1"; 
+      // Linha de impressão com concatenação (+) e 
+      // Linha de impressão com ${}.
+        
+      p1.innerHTML = "<b>Com aspas: " + var1 + "</b>";
+      p2.innerHTML = `<b>Com crase: ${var1} </b>`;
+      
+      // Criação Literal de Objeto.   
+      let Aluno = {nome : "Rodrigo",
+                   curso : "ADS",
+                   idade : 21
+      } 
+      
+      console.log(typeof(Aluno));
+      console.log(typeof(Aluno.nome));
+      
+      // Loop em objeto.
+      for (i in Aluno) {
+          document.write(`<p> ${Aluno[i]} </p>`);
+      }
+       // Criação de objeto a partir de outro objeto.  
+      let alunoz = Object.create(Aluno); 
+      alunoz.nome="João"; 
+    
+      for (i in alunoz) {
+          document.write(`<p> ${alunoz[i]} </p>`);
+      }
+      
+      // Criação de um objeto vazio.  
+      let rafa = Object.create({});   
+	      rafa.nome= "Rafael Luna";
+	      rafa.email = "rafael@fatecsp.br";
+      
+      for (i in rafa) {
+         document.write(`<p> ${rafa[i]} </p>`);
+      }
+      
+      // Adição de Propriedade a um objeto. 
+      Aluno.email = "rodrigo@prov.com";
+      Aluno.escola="Fatec-SP";
+          
+      // Adição de Método ao um objeto.   
+      alunoz.print = function() {
+         document.write(`<p> Método: ${this.nome} e E-mail: ${this.email} </p>`);
+      }    
+      alunoz.print();
+      
+      // Verificando o Construtor de um objeto.
+      document.write(`<p> construtor de alunoz: ${alunoz.constructor} </p>`);
+
+      let dt = new Date(); 
+      document.write(`<p> ${"construtor de dt: " + dt.constructor} </p>`);
+
+      // Protótipo de Objeto com classe - (2015)  
+      class Pessoa {
+        constructor() {
+          this.nome = null; 
+          this.endereco = null;
+        }  
+      }
+        
+      // Estanciação de variável de objeto (uso do protótipo). 
+      let leo = new Pessoa(); 
+      leo.nome= "Leonardo Texeira";
+      leo.endereco = "Av. Tiradentes, 709";
+        
+      for (let i in leo) {
+         document.write(`<p> ${leo[i]} </p>`);
+      }    
+      
+      // Array de objetos...  
+      let veteranos = [
+          {nome : "Antonio",
+           curso : "ADS",
+           idade : 20
+          },
+          {nome : "David",
+           curso : "ADS",
+           idade : 22
+          },
+          {nome : "Gustavo",
+           curso : "ADS",
+           idade : 21
+          }
+      ]
+      // Impressão só das propriedade 'nome'  
+      for (i in veteranos) {
+         document.write(`<p> ${veteranos[i].nome} </p>`);
+      }
+      
+      // Uso de variáveis...
+      let nome="Maria";
+      let curso="TOT";
+      let idade=20;
+        
+      let calouros = {nome : nome,
+                      curso : curso,
+                      idade : idade
+      } 
+        
+      for (i in calouros) {
+         document.write(`<p> ${calouros[i]} </p>`);
+      }
+     
+      // Em ES06: Quando o nome da variável é igual ao da propriedade...  
+      let nome1="Ester";
+      let curso1="Caes";
+      let idade1=22;
+      let escola="Fatec-SP";    
+        
+      let calouros1 = {nome1,
+                       curso1,
+                       idade1,
+                       instituicao: escola
+      } 
+        
+      for (i in calouros1) {
+         document.write(`<p> ${calouros1[i]} </p>`);
+      }
+          
+  // Função construtora primitiva
+  function Livro(tit, aut) {    
+    this.titulo = tit;              
+    this.autor = aut;            
+  }
+  
+  // Instanciação de objeto
+  let meuLivro = new Livro("CSS3", "Maujor"); 
+  console.log(meuLivro.titulo);
+  console.log(meuLivro.autor);
+
+  let outroLivro = new Livro ("PHP", "Niederauer"); 
+  console.log(outroLivro.titulo);
+  console.log(outroLivro.autor);
+   
+  // Função construtora anônima      
+  Musica = function(tit, aut) {    
+    this.titulo = tit;              
+    this.autor = aut;            
+  }
+  
+  // Instanciação de objeto
+  let outraMusica = new Musica ("Melodia em Fá", "Chopin");     console.log(outraMusica.titulo);
+  console.log(outraMusica.autor);  
+  
+ */  
+        
+   </script>
+     
+  <!-- Use sempre arquivo EXTERNO JS!
+       <script src="obj.js"></script>
+   --> 
+ </body>
+</html>

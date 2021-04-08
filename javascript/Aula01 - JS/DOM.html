@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+
+  <body>
+    <h1 id="tit1">EXEMPLO - DOM</h1>
+
+    <p id="paragr1">Texto de Exemplo</p>
+
+    <button onclick="mudaCor('blue')">Azul!</button>
+
+    <button onclick="mudaCor('red')">Vermelho!</button>
+
+    <h2 id="tit2" onclick="troca()">Clique!</h2>
+
+    <h2 id="h2">Titulo com Classe!</h2>
+
+    <input id="fonte" type="button" value="Formata fonte">
+
+    <img id="img1" width="60%" height="auto" src="imagem1.jpg" alt="Imagem 1">
+
+    <input id="esconder" type="button" value="esconde">
+
+    <input id="exibir" type="button" value="Exibe" />
+
+    Nome: <input id="nome" type="text"  size="30" /> <!--  onchange -->
+
+    <h3 id="tit3"></h3>
+
+    <p><img id="imag" src="apagada.jpeg" alt="" height="200" /></p>       
+
+    <p><input id="interruptor" type="button" value="Liga/Desliga" /></p>
+
+ 
+
+
+    <script>
+        document.getElementById("tit1").style.color="red"
+
+        function mudaCor(novaCor) {
+            var elemento = document.getElementById("paragr1");
+            elemento.style.color = novaCor;         // Troca cor do elemento cuja tag é "paragr1"
+        }
+        function troca(){
+            document.getElementById("tit2").innerHTML="Bem-Vindo!!!"; // Troca o conteúdo que está dentro da tag (innerHTML)
+        }
+
+        fonte.onclick=function(){       // Declaração direta (Função Anônima): id.evento=função (botão.aoclicar=realiza-algo)
+            h2.style.fontSize="35px";   // Mudança da estilização (CSS)
+            h2.className="formata";
+        }
+
+        esconder.onclick=function(){
+            img1.style.display="none"; // Esconde o elemento cuja tag é "img1".
+        }
+        exibir.onclick=function( ) {
+        img1.style.display="block";     // Exibe o elemento cuja tag é "img1".
+     }  
+
+        nome.onchange=function() {
+          tit3.innerHTML = nome.value; // value: propriedade que armazena o conteúdo atual do campo input.
+        } 
+    
+    </script>
+
+
+  </body>
+</html>

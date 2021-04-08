@@ -1,0 +1,14 @@
+
+/* Estilo da mensagem genérica de erro no formulário... (opcional) */
+#msgGeral3 {
+    color: red;   
+}
+/* Estilo aplicado quando o conteúdo dos campos input forem inválidos. */ 
+.invalido {
+    border: 2px solid pink;
+} 
+/* Estilo aplicado quando o conteúdo dos campos input forem válidos. */ 
+.valido {
+    color: darkgreen; 
+    font-size: .8em;    
+} 

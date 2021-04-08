@@ -1,0 +1,17 @@
+/* Uso das Pseudo-classe CSS :invalid e :valid 
+        /* Inicialmente todos os campos input com 'required' começam como inválidos.  */  
+            input:invalid {
+               border: 2px solid red;
+            }
+        
+        /* Se o conteúdo do campo com 'required' for válido, assume a estilização de :valid */  
+            input:required:valid {
+               border: 3px solid green;
+            } 
+        
+        /* Cancelamento da estilização inicial como ':invalid' para os campos com 'placeholder’): */
+        
+            input:required:not(:placeholder-shown):invalid {
+               border: 3px solid red;
+            }
+        

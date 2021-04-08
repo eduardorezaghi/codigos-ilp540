@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="FORMULARIO - 2 - JS.css">
+    <title>FORMULARIO - 2 - JS</title>
+</head>
+<body>
+    
+    <form name="form2" id="form2">
+        <h3>FORMULÁRIO 2</h3>
+        <p>
+          <label for="user2">Nome&nbsp;</label>
+            <input type="text" name="user2" id="user2" /> 
+            <span id="msgUser">*</span>
+        </p><p>       
+          <label for="email2">E-mail</label> 
+            <input type="text" name="email2" id="email2" /> 
+            <span id="msgEmail">*</span>    
+        </p><p>
+         <label>Enquete:
+            Sim<input type="radio" name="opcao2" class="opc2" value="s" />
+            Não<input type="radio" name="opcao2" class="opc2" value="n" /> 
+            <span id="msgRad">*</span>   
+           </label>
+        </p><p>    
+            <label for="sel2">Selecionar:</label>
+              <select id="sel2" name="sel2">
+                  <option value="">Opções</option>
+                  <option value="s1">Sel 1</option>
+                  <option value="s2">Sel 2</option>
+                  <option value="s3">Sel 3</option>
+              </select>
+               <span id="msgSel">*</span> 
+            </p><p>     
+            <button type="submit"><b>Enviar</b></button> 
+            <em>(Default: type="submit")</em>
+          </p> 
+        </form> 
+    
+  
+    <script src="FORMULARIO - 2 - JS.js"></script>
+</body>
+</html>

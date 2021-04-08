@@ -1,0 +1,20 @@
+/* Só para a Home */
+
+@media screen and (min-width: 1200px){
+    
+    #box_header {grid-area: a;}
+    #box_menu {grid-area: b;}
+    #box_section {grid-area: c;}
+    #box_aside {grid-area: d;}
+    #box_footer {grid-area: e;}
+    
+    #container {
+        display: grid;
+        grid-template:                         /* Uso do atalho. */
+            "a a a" 200px 
+            "b b b" auto 
+            "c c d" auto 
+            "c c d" auto 
+            "e e e" 180px / 5fr 5fr 2fr;       /* Grade dividida em 12 frações. */
+    }  
+}

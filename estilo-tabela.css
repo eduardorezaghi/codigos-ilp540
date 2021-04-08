@@ -1,0 +1,75 @@
+table, tr, td{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#tabela_principal{
+  text-align: justify;
+  margin: 0 auto;
+  background: lightgrey;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+#tabela_principal td{
+  border: 1.5px solid black;
+  padding: 5px 15px 5px 10px;
+}
+.titulo_tab_p{
+  text-align: center;
+  width: 10%;
+}
+#iframe_p{
+  display: block;
+  width: 300px;
+  max-width: 75%;
+  height: 25vh;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#logo_win10{
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  max-width: 30%;
+  height: auto;
+  transition: width 1.2s;
+}   #logo_win10:hover{
+    width: 70%;
+}
+
+#lst_conteudo{
+  padding: 25px;
+}
+#lst_ver li{
+  list-style: disc;
+}
+
+
+
+
+
+#ilustracoes{
+  background-color: #05070a;
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+  
+  border: 2px solid rgb(235,136,15);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 15px;
+}
+#ilustracoes > figure{
+  display: inline-block;
+  max-width: 400px;
+  height: auto;
+  background-color: rgb(49, 53, 55);
+  margin: 0 auto;
+  padding: 15px;;
+} figure img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}

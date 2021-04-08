@@ -1,0 +1,165 @@
+/* TARDE - Página Modelo: Capítulo 02 */
+
+/* Reset - Para padronizar alguns elementos do CSS dos navegadores... */
+
+                div, header, nav, section, article, aside, figure, footer, ul, li {   /* Incluído ul e li */
+                    margin: 0;
+                    padding: 0;
+                    display:block;
+                    box-sizing: border-box;
+                }  
+
+/* Início da Estilização... */
+
+                html, body {
+                    font-size: 18px;
+                    font-family: Helvetica, sans-serif;
+                    background-image: url("imagens/pelicano.jpg"); 
+                }
+                p {
+                    text-indent: 0%;                        /* Indentação zerada... */
+                }
+                h1 {                                        
+                    color: navy;         
+                    font-size: 2.2rem;                      /* Tamanho da fonte em 'em'... */
+                    font-family: 'Times New Roman', Times, serif;       /* Família de fontes... */
+                }
+
+/* MENU */       
+                        
+                #container nav {                             /* Menu de Navegação incluído... */
+                    background-color: rgb(255, 191, 128); 
+                }
+                nav ul {
+                    list-style-type: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+                }
+                nav li {
+                    border: solid 1px #ccc;
+                    width: calc(60% / 4);
+                    min-width: 160px;
+                    text-align: center;
+                    background-color: darkorange;
+                    box-shadow: 2px 2px #ccc;
+                }   
+                nav a {
+                   text-decoration: none;
+                   text-transform: uppercase;    
+                   color: #333;
+                   display: block;    
+                   padding: 25px;      
+                }
+                nav a:hover {
+                   background-color: aliceblue; 
+                }   
+
+
+                .tit2 {color: green;
+                    margin-left: 0%;                        /* Margem esquerda zerada... */
+                }
+                #container {
+                    margin: auto;
+                    width: 90%;
+                    border: 5px solid #aaa;
+                    background-color: #e6f2ff;
+                }
+                section {
+                    padding-left: 5%;                       
+                    padding-right: 5%;                      
+                }
+                .box_article {
+                   padding-left: 15px; 
+                   padding-bottom: 15px;     
+                }
+                #box_header, #box_footer {
+                    background-color: aqua;
+                    padding: 25px;                          /* Margem interna... */
+                    text-align: center;
+                    height: 190px;
+                }
+                .back_head{
+                    background-image: 
+                        linear-gradient(to top,
+                        rgba(100,240,240,0.92),
+                        rgba(100,100,240,0.93)),
+                        url("imagens/textura.jpg");
+                    background-size: contain;
+                }
+                .back_footer{
+                    background-image: 
+                        linear-gradient(to top,
+                        rgba(100,100,240,0.93),
+                        rgba(100,240,240,0.92)),
+                        url("imagens/textura.jpg");
+                    background-size: contain;
+                }
+
+                #logo{
+                    float: left;
+                    margin-left: 4.5%;
+                    border: solid #999 2px;
+                    border-radius: 6px;
+                    box-shadow: 3px 3px #999;
+                }
+
+                #img1 {
+                    max-width: 30%;
+                    height: auto;
+                    float: right;
+                    margin-left: 2%;  
+                    box-shadow: 3px 3px #999;               /* Efeitos de Bordas incluídos... */
+                    border-radius: 7px;
+                }
+                #img2 {                             
+                    max-width: 30%;
+                    height: auto;
+                    float: left;
+                    margin-right: 2%;
+                    box-shadow: 3px 3px #999;               /* Efeitos de Bordas incluídos... */
+                    border-radius: 7px;
+                    margin-bottom: 20px;                    /* Margem-bottom incluída... */
+                }
+
+/* ASIDE */
+
+                aside {
+                    clear:both; 
+                    background-color: aliceblue;
+                }
+                aside ul {                          /* Aside e lista incluídos... */
+                    list-style: square inside;
+                    color: green;
+                    padding-left: 6%;                        
+                }
+                aside li {
+                    padding: 10px 0;                         
+                }
+
+/* FOOTER */
+
+                #box_footer {
+                    clear: both;
+                }
+
+                footer table {                          
+                    margin:auto;
+                    margin-top: 20px;
+                }
+
+                footer td {
+                    display: inline-block;                        
+                    background-color: rgba(255, 191, 128,.7);
+                    min-width: 160px;
+                    border: solid 1px darkorange;
+                    padding: 5px;
+                }
+
+                footer  td a {                               /* Lins da Tabela incluídos... */
+                   text-decoration: none;
+                   color: #555;    
+                   display:block; 
+                   padding:10px;
+                }
+

@@ -1,0 +1,168 @@
+/* Página Modelo: Capítulo 05 */
+
+/* *** (ESTILO GERAL PARA TODAS AS PÁGINAS DO SITE *** */ 
+
+/* RESET - PARA DEIXAR OS NAVEGADORES UNIFORMES... */ 
+body, #container, div, header, nav, section, article, aside, figure, footer, ul, li, iframe, audio, video {                                       
+    margin: 0;                      /* Inclusão do body, ul, li, iframe, audio, video... */
+    padding: 0;                          
+    display: block;
+    box-sizing: border-box;
+} 
+
+/* PADRÃO GERAL */
+html, body {
+    font-size: 18px;
+    font-family: Honzo, Lacosta, sans-serif; 
+    background-color: darkgray;
+}
+#container {
+    width: 90%;
+    margin: 0 auto;
+    border: 5px solid #aaa;
+    background-color: #e6f2ff;
+}
+section {
+    padding: 2% 5%; 
+}
+.box_article {
+   padding-left: 15px; 
+   padding-bottom: 15px;     
+}
+aside {
+    clear:both; 
+    background-color: rgba(150,150,150,.5);
+}
+.tit2 {color: green;                              
+}        
+
+/* CABEÇALHO */            
+#box_header {                            
+    margin: 0 auto;
+    height: 230px;                       
+    padding: 25px;
+    text-align: center;                     
+    background-color: aqua;
+}
+
+h1 {
+    color: navy;         
+    font-size: 2.2em;                      
+    font-family: zapfino, sans-serif;   
+}
+a#home {
+    text-decoration: none;                  /* Retira o sublinhado do link do logo para a Home. */
+}
+.back_head {                             
+    background-image:
+        linear-gradient(to top, 
+        rgba(100, 240, 240, 0.62), 
+        rgba(100, 100, 240,0.63)), url("../imagens/textura.jpg");
+    background-size: contain;
+}
+#logo {                                     
+    float: left;
+    margin-left: 4.5%;
+    border: solid #999 1px;
+    border-radius: 7px;
+    box-shadow: 2px 2px #999;
+    background-color: #e6f2ff;           
+}
+/* MENU */           
+#container nav {                           
+    background-color:  darkorange;      /* Cor mudou de rgb(140,140,140) para darkorange. */
+}
+nav ul {
+    list-style-type: none;
+  /*  display: flex;
+    flex-wrap: wrap;                    /*  Movido para breakpoints.css */
+    justify-content: flex-end;
+}
+nav li {
+  /*  width: calc(60% / 4);             /*  Movido para breakpoints.css */
+    min-width: 160px;          
+    background-color: darkorange;
+}
+nav a {
+   display: block;    
+   padding: 25px;    
+   text-decoration: none;
+   text-transform: uppercase;    
+   color: #555;
+   font-weight: bold;
+   text-align: center;
+   transition: background-color 1s;     
+}
+nav a:hover {
+    background-color: rgba(255, 191, 128,.9); 
+}     
+
+/* HOMEPAGE */
+#img1 {
+    max-width: 30%;
+    height: auto;
+    float: right;
+    margin-left: 2%;  
+    box-shadow: 3px 3px #888;        
+    border-radius: 5px;
+}
+#img2 {                             
+    max-width: 30%;
+    height: auto;
+    float: left;
+    margin-right: 2%;
+    box-shadow: 3px 3px #888;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+aside ul {                             
+    list-style: square inside;
+    color: green;
+    padding-left: 6%;  
+}
+aside li {
+    padding: 10px 0;                         
+}
+aside h3 {                         /* Estilização do h3 da lista normal... */
+    padding-top: 2%; 
+    padding-bottom: 2%;
+    padding-left: 6%;
+    color: #f9f9f9;
+    background-color: #777;
+}
+
+/* RODAPÉ */
+#box_footer {
+    padding: 25px;
+    text-align: center;
+    background-color: aqua;
+}
+.back_foot {                           
+    background-image:
+        linear-gradient(to bottom, 
+        rgba(100, 240, 240, 0.22), 
+        rgba(100, 100, 240,0.33)), url("../imagens/textura.jpg");
+    background-size: contain;
+}
+footer table {                         
+    margin:auto;
+    margin-top: 20px;
+}
+
+footer td {
+    display: inline-block;             
+    min-width: 95%;                 /* Alterado o min-width abaixo de 160px para 95%... */
+    padding: 5px;
+    background-color: rgba(200, 200, 200,.9);    
+    border: solid 1px rgba(255, 191, 128,.7);
+}
+
+footer a {                             
+   text-decoration: none;
+   color: #555;    
+   display:block; 
+   padding:10px;
+}
+footer td:hover { 
+    background-color: rgba(255, 191, 128,.9); 
+}

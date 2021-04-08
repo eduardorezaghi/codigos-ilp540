@@ -1,0 +1,103 @@
+/* *** BREAKPOINTS PARA O CABEÇALHO E O MENU PRINCIPAL *** */
+
+/* *** MOBILE FIRST *** */
+
+@media screen {                            /* Para dispositivos de quaisquer tamanhos... */
+  
+    h1 {
+        font-size: 160%;
+        line-height: 50px;
+    }   
+    img#logo {
+        width:15%;
+        height: auto;
+    }
+    
+    }
+    #img_icon {                            /* Imagem do ícone para exibir/esconder o Menu (com Javascript)... */
+        max-width: 35px;
+    }
+    nav ul li {
+        margin-bottom: 1.2px;
+        width: 100%;
+   } 
+}
+
+/* *** Dispositivos, a partir de 480px *** */
+
+@media screen and (min-width: 480px){      
+    
+    h1 {  
+        line-height: 90px;
+    } 
+    img#logo {
+        width:12%;
+        height: auto;
+    }
+    #list_menu {                           /* Exibe Menu... */
+        display: block;
+    }
+    .icon {                                /* Esconde link com imagem do ícone que exibe/esconde o Menu... */
+        display: none;
+    }
+    footer td {
+        min-width: 160px;                  /* min-width alterado (volta) para 160px ... */         
+    }
+}
+
+/* *** Dispositivos, a partir de 650px *** */
+
+@media screen and (min-width: 650px){      
+    
+    #list_menu {            
+        display: flex;                      /* Flex movido do exemplo5.css para cá... */ 
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+    nav {
+        position: sticky;                   /* Sticky 'trava' o Menu de navegação no top da janela. */ 
+        top:0;
+    }
+    nav ul li {
+        width: calc(99% / 4);
+        min-width: 140px;
+        background-color: darkorange;
+    }
+}
+
+/* *** Dispositivos, a partir de 980px em diante *** */
+
+@media screen and (min-width: 980px){       
+    
+    h1 {
+        font-size: 200%;
+        line-height: 100px;
+    }
+    img#logo {
+        max-width: 95px;
+    }
+     #list_menu {            
+        justify-content: flex-end; 
+    }
+    nav ul li {
+        width: calc(60% / 4);
+        min-width: 160px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    
+    #container {
+        max-width: 1440px;              /* Max-width trava a largura do container ao chegar no valor... */
+    }
+    #box_header {                              
+        width: 100%;                   
+    }
+    aside {
+        background-color: darkorange;
+    }
+    aside li {
+        color: #444;
+        font-style: italic;
+    }
+}

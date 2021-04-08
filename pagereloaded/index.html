@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 25/09/2020</title>
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/principal.css" /> 
+        <style>
+            article{
+                font-size: 30px;
+                background-color: darkgrey;
+                display: inline;
+
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <div id="divisao1">
+            <article id="artigo1">Hello World!</article>
+
+            <h2>Formulário</h2>
+            <form id="clientes" name="clientes" method="post"
+                action="mailto:edu.rezaghi@gmail.com">
+                <fieldset><legend>Dados de Usuário</legend>
+                    <p>
+                        <label for="user">Nome: </label>
+                        <input type="text" id="user" name="user" size="40" maxlength="31" 
+                        placeholder="Informe seu nome..." autocomplete="on" required autofocus/>
+                    </p>
+                    <p>
+                        <label for="email">Email: </label>
+                        <input type="text" id="email" name="email" size="40" maxlength="40" 
+                        placeholder="Informe seu e-mail..." autocomplete required>
+                    </p>
+                </fieldset>
+                
+                <fieldset><legend>Nome da Faculdade</legend>
+                    <p>
+                        <label>Aluno: </label>
+                        <label for="sim">Sim:</label>
+                        <input type="radio" id="sim" name="enq" value="s" />
+                        <label for="nao">Não:</label>
+                        <input type="radio" id="nao" name="enq" value="n" />
+                        <label for="talvez">Talvez:</label>
+                        <input type="radio" id="talvez" name="enq" value="t" />
+                    </p>
+                    <p>
+                        <label>Hobby? </label>
+                        Natação: <input type="checkbox" value="nat" id="nat" name="natacao" />
+                        Cinema: <input type="checkbox" value="cin" id="cin" name="cinema" />
+                        Games: <input type="checkbox" value="gam" id="gam" name="games" checked="checked" />
+                    </p>
+                    <input type="hidden" id="oculto" name="oculto" value="Conteudo oculto..." />
+                    <p>
+                        <label for="regiao">Região: </label>
+                        <select id="regiao" name="regiao" size="3" multiple disabled>
+                            <option value="n">Norte</option>
+                            <option value="s">Sul</option>
+                            <option value="l" selected>Leste</option>
+                            <option value="o">Oeste</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="comentario">Comentario: </label><br/>
+                        <textarea name="comentario" id="comentario" cols="20" rows="4" maxlength="140" readonly>CONTRATO....</textarea>
+                        <p>Número: <input type="number" name="nmb" id="nmb" min="0" max="100" step="10" /></p>
+                        <p>Cor: <input type="color" name="" id=""></p>
+                        <p>Tempo: <input type="time" name="" id=""></p>
+                        <p>URL: <input type="url" name="" id=""></p>
+                        <p>Intervalo: <input type="range" name="" id=""></p>
+                    </p>
+                                       
+                    <p>
+                        <label for="faculdade">Faculdade: </label>
+                        <input type="text" id="faculdade" name="faculdade" value="FATEC São Paulo"/>
+                        </p>
+
+                </fieldset>   
+                <fieldset><legend>Enviar ou Limpar</legend>
+                    <p><input type="submit" value="Enviar" id="enviar" /> 
+                    <input type="reset"  value="Limpar" id="limpar" /> </p>
+                </fieldset>
+                <p>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" maxlength="10" required>
+                </p>
+            </form>
+
+        
+        </div>
+    </body>
+
+
+
+    <footer>
+
+    </footer>
+</html>

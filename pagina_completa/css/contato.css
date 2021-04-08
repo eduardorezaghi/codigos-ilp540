@@ -1,0 +1,35 @@
+#box_container{
+    background-image: 
+    linear-gradient(to bottom,
+    hsl(29, 80%, 56%),
+    hsl(45, 79%, 66%)),
+    url("imagens/textura2.jpg");
+    border: 2px solid #E07918;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+#box_container > form{
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+legend{
+    font-weight: bold;
+    font-style: italic;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px #999;
+}
+
+form >fieldset{
+    background-color: rgb(250, 210, 130);
+    align-content: center;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+}

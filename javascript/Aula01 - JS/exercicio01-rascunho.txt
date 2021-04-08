@@ -1,0 +1,11 @@
+ms - s     =  /1000
+s - min    =  /60
+min - h    =  /60
+h --- d    =  /24
+truncar(d) =  inteiro
+
+A data anterior tem menos mili-segundos.
+Para ver a diferença, basta subtrair o intervalo data (requerida - data anterior).
+O resultado será em milésimos de segundo. É necessário converter o resultado.
+
+Lembrete: Entrega do Projeto I na próxima aula (16/10) pelo Teams ou wetransfer.com para o email: bete@fatecsp.br

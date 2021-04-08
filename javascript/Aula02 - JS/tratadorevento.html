@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratadores de Evento</title>
+</head>
+<body onMouseMove="moveu( );" onKeyPress="escrever( );" onLoad="alert('Bem-vindo!');" onResize="redimensionar();"> <!-- Ao Mover o Mouse, Ao Pressionar Tecla, Ao Carregar a Página, Ao Redimensionar -->
+
+    <h2 id="visor_a"></h2>
+    <h2 id="visor_b"></h2>
+    <h2 id="demo">Exibe largura x altura da Janela</h2> 
+
+
+    <strong onClick="document.fgColor='#00f';" > <!-- Ao Clicar, mude a cor da fonte -->
+        Dê um clique neste texto!
+    </strong>
+     
+    <p onClick="document.bgColor='#f00';" onDblClick="document.bgColor='#fff'"> <!-- Ao Clicar Duas Vezes, mude o cor de background -->
+        Dê um clique simples… e depois um duplo!
+    </p>
+     
+    <input type="button"  value="Down" onMouseDown="alert('Pressionou o botão!');" />   <!-- Ao Pressionar o Botão, exiba o alerta "Pressionou o botão!"  -->
+
+    <input type="button"  value="Up" onMouseUp="alert('Segurou e depois liberou!');" /> <!-- Ao Segurar e Liberar o Botão, exiba o alerta "Segurou e depois liberou!" -->
+
+    <img  src="imagem1.jpg"  alt="Imagem1" width="300" height="300" onMouseOver="this.src='imagem2.jpg';" 
+    onmouseout ="this.src='imagem1.jpg';" /> <!-- Ao Passar o Mouse, carregue a imagem2.jpg, Ao Tirar o Mouse, carregue a imagem1.jpg. -->
+    
+    <img  src="imagem_erro"  alt="Imagem com erro" width="300" height="300" onError="alert('Imagem não localizada.');" /> <!-- Tratador onError: se existir algum erro, exiba o alerta "Imagem não localizada." -->
+        
+
+    <script src="js/tratador.js"></script>
+</body>
+</html>

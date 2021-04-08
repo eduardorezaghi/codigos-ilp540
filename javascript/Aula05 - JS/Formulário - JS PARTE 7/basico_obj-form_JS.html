@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMULÁRIO BÁSICO 1 - JS</title>
+</head>
+<body>
+  <!-- FORMULÁRIO BÁSICO (uso de email para testes) -->
+  <!-- EXEMPLO 1 -->
+
+  <form id="form1" action="mailto:seuemail@prov"  method="POST" enctype="text/plain">
+    <fieldset>
+      <p>Nome: <input type="text" id="user" /></p>
+      <p>Email: <input type="email" id="email" /></p>
+      <p><input type="submit" value="Enviar" /></p>
+
+       <!-- <p> Escolha uma cor: <br />    Todos os RADIO BUTTONS devem ter o mesmo ID. -->
+        <input type="radio" name="cor"
+        id="cor1" value="verde" /> Verde
+     <input type="radio" name="cor"
+        id="cor2" value="rosa" /> Rosa
+     <input type="radio" name="cor"
+         id="cor4" value="azul" /> Azul
+      </p> 
+
+      
+      <select id="sel"  onchange="alert(this.value);">  <!-- Ao clicar NESSE Elemento, exiba o alerta. -->
+        <option value="a">Opc. A</option>
+        <option value="b">Opc. B</option>
+        <option value="c">Opc. C</option>
+      </select>
+
+      <p>
+        Quer receber notícias?
+          <input type="checkbox" id="pref"  value="on" checked /> 
+     </p> 
+
+     <p>
+      Checkbox <input type="checkbox" id="idExemplo" />
+    </p>  
+
+
+    </fieldset>
+  </form>   
+
+  <p><button id="btn">Testes</button></p>
+  <p><button id="btEnviar" type="button">Enviar<button></p>
+  <p><button id="btLimpar">Limpar</button></p>
+
+
+  <div id="evento">     
+    <input id="btStart" type="button" value="Escrever" />
+    <input id="btStop" type="button" value="Cancelar" />
+    <div id="idTexto"></div> 
+ </div>
+
+
+
+
+<script src="basico_obj-form_JS.js"></script>
+</body>
+</html>

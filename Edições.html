@@ -1,0 +1,75 @@
+<!Doctype html>
+<html>
+  <head>
+   <meta charset="utf-8" />
+   <META name="viewport" content="width=device-width, initial-scale=1">
+
+   <title> Formulário</title>
+   <style>
+       fieldset {
+           width: 23%; margin:auto;
+       }
+       h1{
+           text-align: center; margin-top: 50px;
+       }
+   </style>
+</head>
+
+
+<body>
+
+<h1> CONTATO </h1>
+<div id="contato">
+<form id="clientes" name="clientes" method="post" action="mailto:seu@email.com">
+
+  <fieldset>
+    <p>
+      <input type="text" placeholder="Nome" id="user" name="user" size="49" maxlength="50" autofocus="autofocus" required="required"/>
+    </p>
+    
+    
+      <p>
+        <input type="email" placeholder="E-mail" id="email" name="email" size="49" required="required"/>
+      </p>
+
+      <p>
+        <label for="conhecer">Como nos conheceu?</label>
+          <select id="conhecer" name="conhecer">
+              <option value="f" selected>Facebook</option>
+              <option value="i">Instagram</option>
+              <option value="e">Fórum</option>
+              <option value="a">Amigo</option>
+              <option value="o">Outros</option>
+          </select>
+    </p>
+
+       <p>
+           <label>Indicaria o site para algum amigo?</label>
+           <label for="sim">Sim:</label>
+             <input type="radio" id="sim" name="enq" value="s" checked />
+            <label for="nao">Não:</label>
+             <input type="radio" id="nao" name="enq" value="n" />
+       </p>
+
+       
+  </fieldset><p></p>
+    
+    <fieldset>
+      <p>
+        <input type="text" placeholder="Assunto" id="subject" name="subject" size="49" maxlength="50"/>
+      </p>
+
+      <p>
+        <textarea id="comentario" placeholder="Mensagem" name="comentario" rows="4" cols="46" maxlength="250"></textarea>
+      </p>
+
+      <p>
+        <input type ="submit" value="enviar"/>
+      </p>
+    </fieldset>
+       
+  
+ </form>
+</div>
+</body>
+</html>
